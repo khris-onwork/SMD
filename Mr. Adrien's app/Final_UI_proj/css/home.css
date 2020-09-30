@@ -1,0 +1,24 @@
+/* HOME NAV */
+
+#navbar-home {
+    display: flex;
+    position: sticky;
+    top: 0%;
+    background: var(--primary-color);
+    color: #fff;
+    justify-content: space-between;
+    z-index: 1;
+    padding: 1rem;
+}
+
+#navbar-home ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+#navbar-home ul li a {
+    color: #fff;
+    padding: .75rem;
+    margin: 0 .5rem;
+}

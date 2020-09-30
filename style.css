@@ -1,0 +1,435 @@
+:root {
+    --primary-color: #006443;
+    --secondary-color: #eee8e8;
+    --light-color: #c7c7c7;
+    --dark-color: #333;
+    --max-width: 1100px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    line-height: 1.5;
+    background: var(--secondary-color);
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    width: 100%;
+}
+
+h2, h3, h4, h5, h5, h6 {
+    font-family: 'Segoe UI', sans-serif;
+    margin-bottom: .55rem;
+    line-height: 1.3;
+}
+
+/* Utilities */
+
+.container {
+    /* max-width: var(--max-width); */
+    /* margin: auto; */
+    padding: 0 2rem;
+    overflow: hidden;
+    /* border: solid red; */
+    width: 100%;
+}
+
+.l-heading {
+    font-size: 2rem;
+    margin-bottom: .75rem;
+    line-height: 1.1;
+}
+
+.lead {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    clip-path: polygon(5% 0, 100% 0, 95% 100%, 0 100%);
+    background: var(--primary-color);
+    height: 37vh;
+    width: 40vw;
+    padding: 1.5rem;
+    text-align: center;
+    opacity: .9;
+}
+
+.lead-text {
+    z-index: 1;
+    position: absolute;
+}
+
+.lead h1 {
+    margin-top: .1rem;
+}
+
+.lead-title {
+    font-size: 2rem;
+    padding: 1.5rem;
+    text-align: center;
+    /* border: red solid;
+     */
+    /* margin-bottom: .75rem;
+    line-height: 1.1; */
+}
+
+/* Navigation */
+
+#main-nav {
+    background: var(--primary-color);
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+#main-nav .container {
+    display: grid;
+    grid-template-columns: .5fr 2fr 9fr;
+    padding: .1rem;
+    align-items: center;
+    margin-right: .5rem;
+
+}
+
+#main-nav .logo {
+    width: 45px;
+    margin-left: .1rem;
+    
+}
+
+#main-nav ul {
+    justify-self: end;
+    display: flex;
+    margin-left: 1rem;
+    
+}
+
+#main-nav ul li a {
+    padding: .5rem;
+    font-weight: bold;
+    font-size: .9rem;
+}
+
+#main-nav ul li a.current {
+    background: var(--light-color);
+    color: var(--primary-color);
+}
+
+#main-nav ul li a:hover {
+    background: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+#main-nav .app-name {
+    justify-self: left; 
+    color: var(--light-color);
+    margin-left: .1rem;
+    font-size: .9rem;
+    
+}
+
+#main-nav .app-name span {
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+#main-nav .nav-menus {
+    margin-left: 13rem;
+}
+
+/* Showcase */
+
+#showcase {
+    background: var(--dark-color) url('../img/markus-winkler-pKZdPZXuo3Q-unsplash.jpg') no-repeat center center/cover;
+    height: 91.5vh;
+    color: #fff;
+
+}
+
+#showcase .showcase-content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    padding: 0 2rem;
+
+    /* Overlay */
+    position: absolute;
+    top: 0px;
+    left: 0;
+    background-color: rgba(0, 0, 0, .6);
+}
+
+.btn {
+    display: inline-block;
+    color: #fff;
+    background: var(--primary-color);
+    padding: .5rem 2rem;
+    border: 2px solid #fff;
+    margin-top: 1rem;
+    margin-bottom: .2rem;
+    
+}
+
+.btn-2 {
+    display: inline-block;
+    background: var(--secondary-color);
+    color: var(--primary-color);
+    padding: .5rem 2rem;
+    margin-top: 1.5rem;
+    border: 2px solid var(--primary-color);
+    width: 100%;
+    text-align: center;
+
+}
+
+.btn:hover {
+    color: var(--primary-color);
+    background: #fff;
+    border: 2px solid var(--primary-color);
+}
+
+.btn-2:hover {
+    color: #fff;
+    background: var(--primary-color);
+
+}
+
+#tangira {
+    height: 60vh;
+    margin: auto;
+}
+
+#iyandikishe {
+    height: 71.1vh;
+    margin: auto;
+}
+
+/* FORMS */
+
+#form-wrap {
+    background: #eee8e8;
+    height: 50vh;
+    width: 30vw;
+    margin: auto ;
+    margin-top: 10%;
+}
+
+#form-wrap-2 {
+    background: #eee8e8;
+    height: 70vh;
+    width: 30vw;
+    margin: auto ;
+    margin-top: 2%;
+}
+
+#form-wrap .form-content {
+    padding: 2rem;
+    font-size: 1rem;
+    line-height: 1.4;
+    display:inline-block;
+    width: 100%;
+    border: 1px solid #006443;
+    border-radius: 3px;
+    height: 100%;
+}
+
+#form-wrap-2 .form-content-2 {
+    padding: 2rem;
+    font-size: 1rem;
+    line-height: 1.4;
+    display:inline-block;
+    width: 100%;
+    border: 1px solid #006443;
+    border-radius: 3px;
+    height: 100%;
+}
+
+#form-wrap .form-content .form-title {
+    text-align: center;
+    font-size: 1rem;
+    padding: 1rem;
+}
+
+#form-wrap-2 .form-content-2 .form-title {
+    text-align: center;
+    font-size: 1rem;
+    padding: 1rem;
+}
+
+#form-wrap .form-content input[type = "text"], 
+input[type = "password"] {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #006443;
+    background: #eee8e8;
+
+}
+
+#form-wrap .form-content input[type = "text"]{
+    margin-top: 2rem;
+    padding: .5rem;
+    margin-bottom: 5px;
+}
+
+#form-wrap-2 .form-content-2 input[type = "text"]{
+    margin-top: .2rem;
+    padding: .5rem;
+    margin-bottom: .5rem;
+    width: 100%;
+    background: var(--secondary-color);
+    border: none;
+    border-bottom: 1px solid var(--primary-color);
+}
+
+#form-wrap .form-content input[type = "password"] {
+    padding: .5rem;
+
+}
+
+#form-wrap-2 .form-content-2 input[type = "password"] {
+    padding: .5rem;
+
+}
+
+
+.sign-up-guide {
+    text-align: center;
+    padding: 1rem;
+}
+
+.sign-up-guide p {
+    color: #006443;
+    font-size: .8rem;
+    font-weight: 600;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.sign-up-guide p a {
+    font-weight: bold;
+    color: #006443;
+    text-decoration: none;
+}
+
+.btn-submit {
+    width: 100%;
+    padding: .5rem;
+    margin-top: 1rem;
+    background: var(--secondary-color);
+    color: var(--primary-color);
+    border: 1.5px solid var(--primary-color);
+    border-radius: .5px;
+    font-weight: 600;
+}
+
+.btn-submit:hover {
+    background: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+.pwd-recover a {
+    color: #696565;
+    font-size: .7rem;
+    font-weight: 600;
+    font-family: 'Segoe UI', sans-serif;
+    margin-left: 5rem;
+    padding-bottom: .5rem;
+    text-decoration: none;
+}
+
+.text-field a {
+    width: 100%;
+}
+
+#main-dash {
+    /* border: solid 1px red; */
+    height: 75vh;
+    display: grid;
+    grid-template-columns: 2fr 2.5fr 2fr;
+    align-items: flex-start;
+    grid-gap: 1rem;
+    padding: .5rem;
+   
+}
+
+#main-dash .owner-info, 
+#main-dash .land-info,
+#main-dash .land-map {
+    margin-top: 1rem; 
+    height: 70vh;
+    /* border-left: solid 1px var(--primary-color); */
+
+}
+
+#main-dash .owner-info {
+    margin-left: .9rem;
+    
+}
+
+#main-dash .owner-title h2,
+#main-dash .land-title h2, 
+#main-dash .map-title h2 {
+    text-transform: uppercase;
+    font-size: 1rem;
+    padding: 1rem;
+    background: var(--primary-color);
+    text-align: center;
+    color: #fff;
+}
+
+#main-dash .land-map {
+    margin-right: 1rem;
+}
+
+#main-dash .land-map .map-title img {
+    margin-left: 0rem;
+    margin-top: 1rem;
+    width: 100%;
+}
+.owner-info-content {
+    padding: 1rem 1rem 1rem 0;
+    
+}
+
+.owner-info-content .info-structure {
+    border-bottom: dotted 1px var(--primary-color);
+}
+
+.owner-info-content .last-info {
+    border-bottom: none;
+    text-transform: uppercase;
+    padding-top: 1rem;
+}
+
+.owner-info-content .last-info ul  {
+    font-size: .5rem;
+}
+
+
+/* FOOTER */
+
+#main-footer {
+    background: var(--primary-color);
+    color: #fff;
+    text-align: center;
+    padding: 1.5rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-top: 1rem;
+}
